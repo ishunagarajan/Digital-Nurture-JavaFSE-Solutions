@@ -1,0 +1,176 @@
+/* =====================================
+   Universal Reset
+===================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   Body Styling
+===================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    width: 100%;
+
+    min-height: 100vh;
+}
+
+
+/* =====================================
+   Header Styling
+===================================== */
+
+header {
+
+    background-color: darkblue;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 3vh;
+}
+
+
+/* =====================================
+   Navigation Styling
+===================================== */
+
+.nav-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    list-style: none;
+
+    background-color: #333;
+
+    padding: 15px;
+}
+
+
+.nav-links li {
+
+    margin: 0 20px;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 20px;
+}
+
+
+/* =====================================
+   Flexbox Layout
+===================================== */
+
+.container {
+
+    display: flex;
+
+    gap: 3vw;
+
+    width: 90%;
+
+    margin: 30px auto;
+}
+
+
+/* =====================================
+   Content Box
+===================================== */
+
+.content-box {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   Image Styling
+===================================== */
+
+.image-box {
+
+    flex: 1;
+}
+
+
+.image-box img {
+
+    width: 100%;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   Media Query
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    /* Stack navigation vertically */
+    .nav-links {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .nav-links li {
+
+        margin: 10px 0;
+    }
+
+    /* Stack layout vertically */
+    .container {
+
+        flex-direction: column;
+    }
+
+    /* Reduce font sizes */
+    h1 {
+
+        font-size: 24px;
+    }
+
+    .nav-links a {
+
+        font-size: 16px;
+    }
+
+    /* Reduce image size */
+    .image-box img {
+
+        width: 80%;
+
+        display: block;
+
+        margin: auto;
+    }
+}

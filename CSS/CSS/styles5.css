@@ -1,0 +1,91 @@
+/* =====================================
+   General Body Styling
+===================================== */
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+}
+
+
+/* =====================================
+   Main Header Styling
+===================================== */
+
+.main-header {
+    background-color: darkblue;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   Heading Typography
+===================================== */
+
+h1 {
+    color: white;
+
+    font-size: 40px;
+
+    font-style: italic;
+
+    font-weight: 600;
+
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+}
+
+
+/* =====================================
+   Section Styling
+===================================== */
+
+.content-box {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   Subheading Styling
+===================================== */
+
+h2 {
+    color: darkgreen;
+
+    font-size: 28px;
+
+    font-weight: 500;
+
+    text-align: center;
+
+    text-transform: capitalize;
+}
+
+
+/* =====================================
+   Paragraph Typography
+===================================== */
+
+.description {
+
+    color: #333333;
+
+    font-size: 18px;
+
+    font-weight: 300;
+
+    line-height: 1.8;
+
+    letter-spacing: 1px;
+
+    text-align: justify;
+
+    text-transform: none;
+}

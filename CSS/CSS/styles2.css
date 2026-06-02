@@ -1,0 +1,67 @@
+/* =====================================
+   General Page Styles
+===================================== */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 20px;
+    padding: 20px;
+}
+
+
+/* =====================================
+   Header Styles
+===================================== */
+
+h1 {
+    color: darkblue;
+    text-align: center;
+}
+
+
+/* =====================================
+   Card Container Styles
+===================================== */
+
+.card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px gray;
+    width: 350px;
+    margin: auto;
+}
+
+
+/* =====================================
+   Paragraph Styles
+===================================== */
+
+p {
+    color: #333333;
+    font-size: 18px;
+}
+
+
+/* =====================================
+   Style for Main CTA Button
+===================================== */
+
+.cta-button {
+    background-color: #007BFF;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+/* =====================================
+   Button Hover Effect
+===================================== */
+
+.cta-button:hover {
+    background-color: #0056b3;
+}

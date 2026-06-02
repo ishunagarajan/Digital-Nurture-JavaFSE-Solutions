@@ -1,0 +1,131 @@
+/* =====================================
+   Universal Reset
+===================================== */
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =====================================
+   Body Styling
+===================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+}
+
+
+/* =====================================
+   Header Styling
+===================================== */
+
+header {
+
+    background-color: darkblue;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 20px;
+}
+
+
+/* =====================================
+   Navigation Styling
+===================================== */
+
+.nav-links {
+
+    display: flex;
+
+    justify-content: center;
+
+    list-style: none;
+
+    background-color: #333;
+
+    padding: 15px;
+}
+
+
+.nav-links li {
+
+    margin: 0 20px;
+}
+
+
+.nav-links a {
+
+    color: white;
+
+    text-decoration: none;
+}
+
+
+/* =====================================
+   Layout Styling
+===================================== */
+
+.container {
+
+    display: flex;
+
+    gap: 20px;
+
+    width: 90%;
+
+    margin: 30px auto;
+}
+
+
+/* =====================================
+   Card Styling
+===================================== */
+
+.card {
+
+    flex: 1;
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px gray;
+}
+
+
+/* =====================================
+   Responsive Design
+===================================== */
+
+@media screen and (max-width: 768px) {
+
+    .nav-links {
+
+        flex-direction: column;
+
+        align-items: center;
+    }
+
+    .container {
+
+        flex-direction: column;
+    }
+
+    h1 {
+
+        font-size: 24px;
+    }
+}

@@ -1,0 +1,41 @@
+fetch("https://jsonplaceholder.typicode.com/posts")
+
+.then(response => response.json())
+
+.then(data => {
+
+    document.body.innerHTML += `
+    <p>Data Loaded Successfully</p>
+    `;
+})
+
+.catch(error => {
+
+    console.log(error);
+});
+
+async function loadData() {
+
+    try {
+
+        document.body.innerHTML += `
+        <p>Loading...</p>
+        `;
+
+        let response =
+            await fetch("https://jsonplaceholder.typicode.com/posts");
+
+        let data =
+            await response.json();
+
+        console.log(data);
+
+    }
+
+    catch(error) {
+
+        console.log(error);
+    }
+}
+
+loadData();

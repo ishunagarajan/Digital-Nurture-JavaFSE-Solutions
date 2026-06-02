@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chrome DevTools Debugging Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgray;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            color: darkblue;
+        }
+
+        button {
+            padding: 10px 20px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+            color: darkgreen;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h2 id="title">Debugging Example</h2>
+
+    <p class="info">
+        Open Chrome DevTools to inspect and debug this page.
+    </p>
+
+    <button onclick="calculateTotal()">
+        Calculate Total
+    </button>
+
+    <p id="result"></p>
+
+</div>
+
+<script>
+
+    function calculateTotal() {
+
+        // Variables for debugging
+        let ticketPrice = 250;
+        let numberOfTickets = 3;
+
+        // Console logs
+        console.log("Ticket Price:", ticketPrice);
+        console.log("Number of Tickets:", numberOfTickets);
+
+        // Add breakpoint here in DevTools
+        let total = ticketPrice * numberOfTickets;
+
+        console.log("Total Amount:", total);
+
+        document.getElementById("result").innerHTML =
+            "Total Event Cost = ₹" + total;
+    }
+
+</script>
+
+</body>
+</html>

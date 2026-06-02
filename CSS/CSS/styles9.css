@@ -1,0 +1,61 @@
+/* =====================================
+   Body Styling
+===================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    padding: 20px;
+}
+
+
+/* =====================================
+   Multi Column News Section
+===================================== */
+
+.news-section {
+
+    background-color: white;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    /* Multi-column properties */
+    column-count: 2;
+
+    column-gap: 30px;
+
+    column-rule: 1px solid gray;
+}
+
+
+/* =====================================
+   Heading Styling
+===================================== */
+
+h1 {
+
+    color: darkblue;
+
+    margin-bottom: 20px;
+
+    column-span: all;
+}
+
+
+/* =====================================
+   Paragraph Styling
+===================================== */
+
+p {
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    text-align: justify;
+}

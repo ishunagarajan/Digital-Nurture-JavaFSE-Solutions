@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Event Registration Form</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .form-container {
+            width: 400px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px gray;
+        }
+
+        h2 {
+            text-align: center;
+            color: darkblue;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            border: 1px solid gray;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 10px;
+            background-color: darkblue;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: green;
+        }
+
+        output {
+            display: block;
+            margin-top: 15px;
+            color: green;
+            font-weight: bold;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="form-container">
+
+        <h2>Event Registration Form</h2>
+
+        <form onsubmit="showMessage(); return false;">
+
+            <label>Full Name</label>
+            <input type="text"
+                   placeholder="Enter your full name"
+                   required
+                   autofocus>
+
+            <label>Email Address</label>
+            <input type="email"
+                   placeholder="Enter your email"
+                   required>
+
+            <label>Event Date</label>
+            <input type="date" required>
+
+            <label>Event Type</label>
+            <select required>
+                <option value="">-- Select Event --</option>
+                <option>Workshop</option>
+                <option>Seminar</option>
+                <option>Cultural Program</option>
+                <option>Sports Event</option>
+            </select>
+
+            <label>Message</label>
+            <textarea rows="4"
+                      placeholder="Enter your message"
+                      required></textarea>
+
+            <button type="submit">Register</button>
+
+            <output id="result"></output>
+
+        </form>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById("result").value =
+                "Registration Successful!";
+        }
+    </script>
+
+</body>
+</html>

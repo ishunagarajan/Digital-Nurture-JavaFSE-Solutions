@@ -1,0 +1,121 @@
+/* =====================================
+   General Body Styling
+===================================== */
+
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: #f2f2f2;
+
+    margin: 20px;
+}
+
+
+/* =====================================
+   Heading Styling
+===================================== */
+
+h1 {
+
+    text-align: center;
+
+    color: darkblue;
+}
+
+
+/* =====================================
+   Event Card Box Model
+===================================== */
+
+.eventCard {
+
+    background-color: white;
+
+    /* Border */
+    border: 2px solid darkblue;
+
+    /* Padding inside box */
+    padding: 20px;
+
+    /* Space outside box */
+    margin: 20px 0;
+
+    border-radius: 10px;
+
+    box-shadow: 0px 0px 5px gray;
+}
+
+
+/* =====================================
+   Form Styling
+===================================== */
+
+form {
+
+    background-color: white;
+
+    padding: 20px;
+
+    margin-top: 30px;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================
+   Input Styling
+===================================== */
+
+input {
+
+    width: 90%;
+
+    padding: 10px;
+
+    margin-bottom: 15px;
+
+    border: 1px solid gray;
+
+    border-radius: 5px;
+}
+
+
+/* =====================================
+   Outline Example
+===================================== */
+
+.highlight-field:focus {
+
+    outline: 3px solid orange;
+}
+
+
+/* =====================================
+   visibility: hidden Example
+===================================== */
+
+.hidden-box {
+
+    visibility: hidden;
+
+    background-color: lightblue;
+
+    padding: 15px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================
+   display: none Example
+===================================== */
+
+.none-box {
+
+    display: none;
+
+    background-color: pink;
+
+    padding: 15px;
+}
